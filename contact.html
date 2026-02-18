@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Book A Taxi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Book A Taxi</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book a Ride</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3>📍 Address</h3>
+                    <p>123 Main Street<br>Downtown Business Hub<br>City, State 12345</p>
+                </div>
+                <div class="info-card">
+                    <h3>📞 Phone</h3>
+                    <p>Main: (555) 123-4567<br>Support: 1-800-TAXI-NOW<br>Available 24/7</p>
+                </div>
+                <div class="info-card">
+                    <h3>✉️ Email</h3>
+                    <p>info@bookataxI.com<br>support@bookataxI.com<br>Response within 2 hours</p>
+                </div>
+                <div class="info-card">
+                    <h3>🕐 Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday - Sunday: 9:00 AM - 5:00 PM<br>24/7 Service Available</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="partnership">Partnership</option>
+                        </select>
+                        <span class="error" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <span class="error" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="contactSuccess" class="success-message" style="display: none;">
+                    Thank you for your message! We'll get back to you soon.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h3>How do I book a ride?</h3>
+                    <p>Simply visit our Booking page, enter your pickup and drop-off locations, and complete the booking. You can also use our mobile app for easy bookings on the go.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards, debit cards, digital wallets, and cash. You can pay at the end of your ride or set up automatic billing through your account.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I cancel my booking?</h3>
+                    <p>Yes, you can cancel your booking free of charge up to 2 minutes before the driver arrives. Cancellations after that may incur a cancellation fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are your drivers background checked?</h3>
+                    <p>Absolutely! All our drivers undergo thorough background checks, vehicle inspections, and professional training to ensure your safety and comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Need Help? Contact Our Support Team</h2>
+        <a href="tel:+15551234567" class="btn btn-secondary">Call Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Book A Taxi. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
